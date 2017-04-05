@@ -6,14 +6,14 @@
   yum:
     pkg: logrotate
     state: present
-  when: ansible_distribution == 'CentOS' or ansible_distribution == 'Red Hat Enterprise Linux'
+  when: ansible_os_family == 'RedHat'
 
 - name: system packages | install logrotate APT
   become: yes
   apt:
     pkg: logrotate
     state: present
-  when: ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu'
+  when: ansible_os_family == 'Debian'
 
 
 - name: logrotate | configure main file
