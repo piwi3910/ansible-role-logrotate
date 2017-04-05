@@ -8,9 +8,26 @@ galaxy_info:
   - name: EL
     versions:
     - 7
-  - name: ubuntu
-  - name: debian
+    - 6
+  - name: Ubuntu
+      versions:
+         - lucid
+         - maverick
+         - natty
+         - oneiric
+         - precise
+         - quantal
+         - raring
+         - saucy
+         - trusty
+  - name: Debian
+      versions:
+        - wheezy
+        - jessie
 
-  galaxy_tags: []
+  galaxy_tags:
+    - system
+    - logs
+    - logrotate
 
 dependencies: []
