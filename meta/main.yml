@@ -1,13 +1,16 @@
 galaxy_info:
-  author: ome-devel@lists.openmicroscopy.org.uk
+  author: pascal@watteel.be
   description: Customise log-rotation
-  company: Open Microscopy Environment
+  company: EMC
   license: BSD
   min_ansible_version: 2.1
   platforms:
   - name: EL
     versions:
     - 7
+  - name: ubuntu
+  - name: debian
+
   galaxy_tags: []
 
 dependencies: []

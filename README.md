@@ -25,4 +25,4 @@ Example Playbook
 Author Information
 ------------------
 
-ome-devel@lists.openmicroscopy.org.uk
+pascal@watteel.be

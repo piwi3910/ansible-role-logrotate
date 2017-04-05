@@ -1,11 +1,20 @@
 ---
 # Configure sudo
 
-- name: system packages | install logrotate
+- name: system packages | install logrotate YUM
   become: yes
   yum:
     pkg: logrotate
     state: present
+  when: ansible_distribution == 'CentOS' or ansible_distribution == 'Red Hat Enterprise Linux'
+
+- name: system packages | install logrotate APT
+  become: yes
+  apt:
+    pkg: logrotate
+    state: present
+  when: ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu'
+
 
 - name: logrotate | configure main file
   become: yes
